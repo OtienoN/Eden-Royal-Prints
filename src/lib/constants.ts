@@ -108,9 +108,9 @@ export const SOCIAL_LINKS = [
 ];
 
 export const CONTACT_DETAILS = {
-    phone: '+254 712 345 678',
+    phone: '+254 100 663 729',
     email: 'info@edenroyal.co.ke',
-    whatsapp: 'https://wa.me/254712345678',
+    whatsapp: 'https://wa.me/254100663729',
     address: 'Moi Avenue, Nairobi, Kenya',
 };
 
