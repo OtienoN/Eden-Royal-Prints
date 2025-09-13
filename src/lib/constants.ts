@@ -3,7 +3,7 @@ import type { ImagePlaceholder } from './placeholder-images';
 import { PlaceHolderImages } from './placeholder-images';
 
 export const APP_NAME = "Eden Royal Prints";
-export const COMPANY_NAME = "Eden Royal Prints and Color Solutions";
+export const COMPANY_NAME = "Eden Royal Prints";
 
 export const NAV_LINKS = [
   { href: '/', label: 'Home' },
@@ -148,35 +148,10 @@ export const SERVICE_FEATURES = [
     },
 ];
 
-export const PRICING_TIERS = [
-  {
-    title: "Printing Services",
-    items: [
-      { name: "Business Cards", price: "From KSh 50 each" },
-      { name: "T-shirt Printing", price: "From KSh 500" },
-      { name: "Posters A4", price: "From KSh 100" },
-      { name: "Flyers", price: "From KSh 20 each" },
-    ]
-  },
-  {
-    title: "Government Services",
-    items: [
-      { name: "KRA PIN", price: "KSh 200" },
-      { name: "eCitizen Services", price: "From KSh 150" },
-      { name: "TIMS Registration", price: "KSh 300" },
-      { name: "Application Support", price: "From KSh 250" },
-    ]
-  },
-  {
-    title: "Digital & ICT",
-    items: [
-      { name: "CV Writing", price: "From KSh 500" },
-      { name: "Typing", price: "KSh 50 per page" },
-      { name: "Passport Photos", price: "KSh 200" },
-      { name: "PC Repair", price: "From KSh 1000" },
-    ]
-  }
-];
+export type PriceTiers = {
+  [key: string]: { name: string; price: string }[];
+};
+
 
 export const CORE_VALUES_V2 = [
     { name: 'Royal Quality', description: 'We use only the finest materials and latest technology to ensure every project meets the highest standards. Our quality control process guarantees exceptional results every time.', icon: 'Crown' as const },
@@ -273,52 +248,14 @@ export const POPULAR_SERVICES_LINKS = [
     { name: 'eCitizen Services', href: '/services#government-cyber' },
 ]
 
-export const QUICK_QUOTE_SERVICES = [
-    // Design & Printing
-    { value: 'tshirt-printing', label: 'Custom T-shirt Printing', price: 500 },
-    { value: 'business-cards-100', label: 'Business Cards (100)', price: 1200 },
-    { value: 'a4-poster', label: 'A4 Poster', price: 100 },
-    { value: 'a5-flyer-single', label: 'A5 Flyer (single side)', price: 20 },
-    { value: 'logo-design-basic', label: 'Logo Design (Basic)', price: 3000 },
-    { value: 'mug-printing-regular', label: 'Mug Printing', price: 600 },
-    { value: 'stickers-a4-sheet', label: 'Stickers (A4 sheet)', price: 300 },
-    { value: 'wedding-card-simple', label: 'Wedding Card (Simple)', price: 150 },
-    { value: 'id-card-pvc', label: 'ID Card (PVC)', price: 250 },
+export const SERVICE_CATEGORIES = [
+    { value: 'Printing', label: 'Printing Services' },
+    { value: 'Government', label: 'Government Services' },
+    { value: 'Digital & ICT', label: 'Digital & ICT' },
+    { value: 'Quick Quote', label: 'Quick Quote' },
+    { value: 'Other', label: 'Other' },
+]
 
-    // Government & eCitizen
-    { value: 'kra-pin-reg', label: 'KRA PIN Registration', price: 200 },
-    { value: 'helb-app-first-time', label: 'HELB Application (First time)', price: 500 },
-    { value: 'good-conduct-app', label: 'Good Conduct Application', price: 300 },
-    { value: 'ecitizen-service-basic', label: 'eCitizen Service (Basic)', price: 150 },
-    { value: 'passport-app-support', label: 'Passport Application Support', price: 400 },
-    { value: 'business-name-reg', label: 'Business Name Registration', price: 1500 },
-
-    // ICT & Academic
-    { value: 'kuccps-app', label: 'KUCCPS Application', price: 500 },
-    { value: 'cv-writing-standard', label: 'CV Writing (Standard)', price: 500 },
-    { value: 'plagiarism-check-per-paper', label: 'Plagiarism Check (per paper)', price: 300 },
-    { value: 'thesis-writing-support', label: 'Thesis Writing Support (per hour)', price: 1000 },
-    { value: 'cover-letter-writing', label: 'Cover Letter Writing', price: 300 },
-
-    // Technical & Repair
-    { value: 'pc-laptop-diagnosis', label: 'PC/Laptop Diagnosis', price: 500 },
-    { value: 'software-install-basic', label: 'Software Installation (Basic)', price: 400 },
-    { value: 'os-install-windows', label: 'OS Installation (Windows)', price: 1000 },
-    { value: 'virus-removal', label: 'Virus Removal', price: 800 },
-    { value: 'phone-screen-repair-quote', label: 'Phone Screen Repair (Quote)', price: 0 },
-
-    // Digital Services
-    { value: 'passport-photos-4', label: 'Passport Photos (4 copies)', price: 200 },
-    { value: 'doc-scanning-per-page', label: 'Document Scanning (per page)', price: 10 },
-    { value: 'photo-printing-4x6', label: 'Photo Printing (4x6)', price: 30 },
-    { value: 'pdf-conversion-per-doc', label: 'PDF Conversion (per doc)', price: 50 },
-
-    // Cyber & Online
-    { value: 'typing-per-page', label: 'Typing (per page)', price: 50 },
-    { value: 'data-entry-per-hour', label: 'Data Entry (per hour)', price: 500 },
-    { value: 'online-form-filling', label: 'Online Form Filling', price: 200 },
-    { value: 'social-media-setup', label: 'Social Media Setup (3 platforms)', price: 1500 },
-];
 
 export const FAQS = [
   {

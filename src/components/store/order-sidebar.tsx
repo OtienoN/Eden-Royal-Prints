@@ -1,3 +1,4 @@
+
 "use client"
 
 import { useState, useEffect } from 'react';
@@ -6,21 +7,32 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Label } from '@/components/ui/label';
-import { CONTACT_DETAILS, POPULAR_SERVICES_LINKS, QUICK_QUOTE_SERVICES } from '@/lib/constants';
+import { CONTACT_DETAILS, POPULAR_SERVICES_LINKS } from '@/lib/constants';
 import { Phone, MessageSquare, Mail } from 'lucide-react';
 import { Button } from '../ui/button';
+import { getServicesByCategory } from '@/services/firestore';
+import type { Service } from '@/services/firestore';
 
 function QuickPriceEstimate() {
     const [servicePrice, setServicePrice] = useState(0);
     const [quantity, setQuantity] = useState(1);
     const [total, setTotal] = useState(0);
+    const [quoteServices, setQuoteServices] = useState<Service[]>([]);
+
+    useEffect(() => {
+        async function fetchServices() {
+            const services = await getServicesByCategory('Quick Quote');
+            setQuoteServices(services);
+        }
+        fetchServices();
+    }, []);
 
     useEffect(() => {
         setTotal(servicePrice * quantity);
     }, [servicePrice, quantity]);
 
     const handleServiceChange = (value: string) => {
-        const selected = QUICK_QUOTE_SERVICES.find(s => s.value === value);
+        const selected = quoteServices.find(s => s.name === value);
         setServicePrice(selected ? selected.price : 0);
     }
     
@@ -38,8 +50,8 @@ function QuickPriceEstimate() {
                                 <SelectValue placeholder="Select service" />
                             </SelectTrigger>
                             <SelectContent>
-                                {QUICK_QUOTE_SERVICES.map(s => (
-                                    <SelectItem key={s.value} value={s.value}>{s.label}</SelectItem>
+                                {quoteServices.map(s => (
+                                    <SelectItem key={s.id} value={s.name}>{s.name}</SelectItem>
                                 ))}
                             </SelectContent>
                         </Select>
