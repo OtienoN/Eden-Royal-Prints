@@ -320,6 +320,33 @@ export const QUICK_QUOTE_SERVICES = [
     { value: 'social-media-setup', label: 'Social Media Setup (3 platforms)', price: 1500 },
 ];
 
+export const FAQS = [
+  {
+    question: "How quickly can you complete my order?",
+    answer: "Most orders are completed within 24-48 hours. Rush orders can often be accommodated with same-day service for an additional fee."
+  },
+  {
+    question: "Do you offer design services?",
+    answer: "Yes! Our creative team can help design your project from scratch or work with your existing ideas to create something amazing."
+  },
+  {
+    question: "What payment methods do you accept?",
+    answer: "We accept cash, M-Pesa, bank transfers, and major credit cards. Payment terms can be discussed for larger orders."
+  },
+  {
+    question: "Can you handle large quantity orders?",
+    answer: "Absolutely! We have experience handling orders from single items to thousands of units. Contact us for volume pricing."
+  },
+  {
+    question: "Do you provide delivery services?",
+    answer: "Yes, we offer delivery within Ugunja and surrounding areas. Delivery fees apply based on location and order size."
+  },
+  {
+    question: "What if I'm not satisfied with my order?",
+    answer: "We guarantee 100% satisfaction. If you're not happy with the results, we'll work with you to make it right or provide a refund."
+  }
+];
+
 export function findImage(id: string): ImagePlaceholder | undefined {
   return PlaceHolderImages.find(img => img.id === id);
 }

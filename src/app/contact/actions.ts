@@ -5,6 +5,7 @@ import { z } from "zod";
 const contactSchema = z.object({
   name: z.string().min(2, "Name is required."),
   email: z.string().email("Invalid email address."),
+  phone: z.string().optional(),
   subject: z.string().min(2, "Subject is required."),
   message: z.string().min(10, "Message must be at least 10 characters."),
 });
@@ -14,6 +15,7 @@ export type ContactState = {
   errors?: {
     name?: string[];
     email?: string[];
+    phone?: string[];
     subject?: string[];
     message?: string[];
   };
@@ -26,6 +28,7 @@ export async function submitContactForm(
   const validatedFields = contactSchema.safeParse({
     name: formData.get("name"),
     email: formData.get("email"),
+    phone: formData.get("phone"),
     subject: formData.get("subject"),
     message: formData.get("message"),
   });
