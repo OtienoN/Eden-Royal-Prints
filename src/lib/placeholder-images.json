@@ -4,79 +4,79 @@
     {
       "id": "hero-banner",
       "description": "A vibrant and modern print shop with various printed materials on display.",
-      "imageUrl": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1600&h=800&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "print shop"
+      "imageUrl": "https://images.unsplash.com/photo-1544725176-7c40e5a71c6e?q=80&w=1600&h=600&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "modern print shop"
     },
     {
       "id": "product-tshirt",
       "description": "A person wearing a custom-printed t-shirt.",
-      "imageUrl": "https://picsum.photos/seed/tshirt/400/400",
+      "imageUrl": "https://images.unsplash.com/photo-1576566588028-4147f3842f27?q=80&w=400&h=400&fit=crop",
       "imageHint": "custom tshirt"
     },
     {
       "id": "product-banner",
       "description": "A large, vibrant vinyl banner hanging at an event.",
-      "imageUrl": "https://picsum.photos/seed/banner/400/400",
+      "imageUrl": "https://images.unsplash.com/photo-1507925921958-b726f7353116?q=80&w=400&h=400&fit=crop",
       "imageHint": "event banner"
     },
     {
       "id": "product-business-card",
       "description": "A stack of professionally designed business cards.",
-      "imageUrl": "https://picsum.photos/seed/bizcard/400/400",
+      "imageUrl": "https://images.unsplash.com/photo-1615840287214-7ff58936c4cf?q=80&w=400&h=400&fit=crop",
       "imageHint": "business cards"
     },
     {
       "id": "product-mug",
       "description": "A ceramic mug with a custom logo printed on it.",
-      "imageUrl": "https://picsum.photos/seed/mug/400/400",
+      "imageUrl": "https://images.unsplash.com/photo-1510616025406-3c27bdb94e2a?q=80&w=400&h=400&fit=crop",
       "imageHint": "custom mug"
     },
     {
       "id": "product-flyer",
       "description": "A person holding a colorful and well-designed event flyer.",
-      "imageUrl": "https://picsum.photos/seed/flyer/400/400",
+      "imageUrl": "https://images.unsplash.com/photo-1581451529981-9b164a277983?q=80&w=400&h=400&fit=crop",
       "imageHint": "event flyer"
     },
     {
       "id": "product-poster",
       "description": "A poster for a concert hanging on a wall.",
-      "imageUrl": "https://picsum.photos/seed/poster/400/400",
+      "imageUrl": "https://images.unsplash.com/photo-1541443339399-790f199e414c?q=80&w=400&h=400&fit=crop",
       "imageHint": "concert poster"
     },
     {
       "id": "testimonial-1",
       "description": "A smiling professional woman in business attire.",
-      "imageUrl": "https://picsum.photos/seed/person1/100/100",
+      "imageUrl": "https://images.unsplash.com/photo-1557862921-37829c790f19?q=80&w=100&h=100&fit=crop",
       "imageHint": "professional woman"
     },
     {
       "id": "testimonial-2",
       "description": "A confident man in a suit, founder of a company.",
-      "imageUrl": "https://picsum.photos/seed/person2/100/100",
+      "imageUrl": "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=100&h=100&fit=crop",
       "imageHint": "businessman suit"
     },
     {
       "id": "testimonial-3",
       "description": "A happy young woman using a laptop.",
-      "imageUrl": "https://picsum.photos/seed/person3/100/100",
+      "imageUrl": "https://images.unsplash.com/photo-1498842812179-c81beecf902c?q=80&w=100&h=100&fit=crop",
       "imageHint": "woman laptop"
     },
     {
       "id": "team-member-1",
       "description": "Portrait of the company's CEO.",
-      "imageUrl": "https://picsum.photos/seed/ceo/400/400",
+      "imageUrl": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=400&h=400&fit=crop",
       "imageHint": "company ceo"
     },
     {
       "id": "team-member-2",
       "description": "Portrait of the head designer.",
-      "imageUrl": "https://picsum.photos/seed/designer/400/400",
+      "imageUrl": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=400&h=400&fit=crop",
       "imageHint": "graphic designer"
     },
     {
       "id": "team-member-3",
       "description": "Portrait of the print technician.",
-      "imageUrl": "https://picsum.photos/seed/technician/400/400",
+      "imageUrl": "https://images.unsplash.com/photo-1622979313437-def380f5546d?q=80&w=400&h=400&fit=crop",
       "imageHint": "print technician"
     },
     {
@@ -112,14 +112,16 @@
     {
       "id": "gallery-6",
       "description": "Professional documentation",
-      "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=center",
+      "imageUrl": "https://images.unsplash.com/photo-1542314831-068cd1dbb563?q=80&w=400&h=400&fit=crop",
       "imageHint": "company mug"
     },
     {
       "id": "map-placeholder",
       "description": "A map showing a pin for a location in Ugunja, Siaya.",
-      "imageUrl": "https://picsum.photos/seed/map/1200/400",
+      "imageUrl": "https://images.unsplash.com/photo-1569336415962-a42945a473ee?q=80&w=1200&h=400&fit=crop",
       "imageHint": "Siaya map"
     }
   ]
 }
+
+    
