@@ -17,7 +17,7 @@ export function Footer() {
       <div className="container py-12">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div className="md:col-span-2 lg:col-span-1">
-            <Logo className="text-white" />
+            <Logo className="text-white text-3xl" />
             <p className="mt-4 max-w-xs text-sm">
               Your premier partner for printing, digital services, and ICT
               solutions in Kenya. Quality you can trust, service you can rely
