@@ -113,7 +113,7 @@ export const WHY_CHOOSE_US = [
         description: 'Quick delivery without compromising on quality', 
         icon: 'Clock' as const
     },
-    { 
+    {
         title: 'Expert Team', 
         description: 'Skilled professionals dedicated to bringing your vision to life', 
         icon: 'Users' as const
@@ -274,13 +274,32 @@ export const POPULAR_SERVICES_LINKS = [
 ]
 
 export const QUICK_QUOTE_SERVICES = [
-    { value: 'tshirt', label: 'T-shirt Printing', price: 500 },
-    { value: 'business-card', label: 'Business Cards (100)', price: 1200 },
-    { value: 'poster', label: 'Poster A4', price: 100 },
-    { value: 'kra-pin', label: 'KRA PIN', price: 200 },
+    // Design & Printing
+    { value: 'tshirt-printing', label: 'Custom T-shirt Printing', price: 500 },
+    { value: 'business-cards', label: 'Business Cards (100)', price: 1200 },
+    { value: 'posters-banners', label: 'A4 Poster', price: 100 },
+    { value: 'flyers-brochures', label: 'A5 Flyer (single side)', price: 20 },
+    { value: 'logo-design', label: 'Logo Design', price: 3000 },
+    { value: 'mug-printing', label: 'Mug Printing', price: 600 },
+    // Government & eCitizen
+    { value: 'kra-pin', label: 'KRA PIN Registration', price: 200 },
+    { value: 'helb-application', label: 'HELB Application', price: 400 },
+    { value: 'good-conduct', label: 'Good Conduct Application', price: 300 },
+    { value: 'ecitizen-services', label: 'eCitizen Service', price: 150 },
+    // ICT & Academic
+    { value: 'kuccps-application', label: 'KUCCPS Application', price: 500 },
     { value: 'cv-writing', label: 'CV Writing', price: 500 },
-    { value: 'passport-photo', label: 'Passport Photos', price: 200 },
-]
+    { value: 'plagiarism-check', label: 'Plagiarism Check (per paper)', price: 300 },
+    // Technical & Repair
+    { value: 'pc-laptop-repair', label: 'PC/Laptop Diagnosis', price: 500 },
+    { value: 'software-install', label: 'Software Installation', price: 400 },
+    // Digital Services
+    { value: 'passport-photo', label: 'Passport Photos (4 copies)', price: 200 },
+    { value: 'document-scanning', label: 'Document Scanning (per page)', price: 10 },
+    // Cyber & Online
+    { value: 'typing-services', label: 'Typing (per page)', price: 50 },
+    { value: 'data-entry', label: 'Data Entry (per hour)', price: 500 },
+];
 
 export function findImage(id: string): ImagePlaceholder | undefined {
   return PlaceHolderImages.find(img => img.id === id);
