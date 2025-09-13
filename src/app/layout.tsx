@@ -4,7 +4,6 @@ import { cn } from '@/lib/utils';
 import { Toaster } from '@/components/ui/toaster';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
-import { CartProvider } from '@/context/cart-context';
 import { COMPANY_NAME, APP_NAME } from '@/lib/constants';
 
 export const metadata: Metadata = {
@@ -53,14 +52,12 @@ export default function RootLayout({
 
       </head>
       <body className={cn('min-h-screen bg-background font-body antialiased')}>
-        <CartProvider>
           <div className="relative flex min-h-screen flex-col">
             <Header />
             <main className="flex-1">{children}</main>
             <Footer />
           </div>
           <Toaster />
-        </CartProvider>
       </body>
     </html>
   );

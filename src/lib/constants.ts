@@ -10,7 +10,7 @@ export const NAV_LINKS = [
   { href: '/about', label: 'About' },
   { href: '/services', label: 'Services' },
   { href: '/gallery', label: 'Gallery' },
-  { href: '/store', label: 'Store' },
+  { href: '/store', label: 'Order Now' },
   { href: '/contact', label: 'Contact' },
 ];
 
@@ -263,6 +263,24 @@ export const CONTACT_DETAILS = {
     address: 'Ugunja, Siaya, Kenya',
     openingHours: "Mon-Fri: 8AM-6PM, Sat: 9AM-4PM"
 };
+
+export const POPULAR_SERVICES_LINKS = [
+    { name: 'Custom T-shirt Printing', href: '/services#design-printing' },
+    { name: 'Business Card Design', href: '/services#design-printing' },
+    { name: 'KRA PIN Registration', href: '/services#government-cyber' },
+    { name: 'CV Writing & Formatting', href: '/services#ict-digital' },
+    { name: 'Passport Photography', href: '/services#digital-services' },
+    { name: 'eCitizen Services', href: '/services#government-cyber' },
+]
+
+export const QUICK_QUOTE_SERVICES = [
+    { value: 'tshirt', label: 'T-shirt Printing', price: 500 },
+    { value: 'business-card', label: 'Business Cards (100)', price: 1200 },
+    { value: 'poster', label: 'Poster A4', price: 100 },
+    { value: 'kra-pin', label: 'KRA PIN', price: 200 },
+    { value: 'cv-writing', label: 'CV Writing', price: 500 },
+    { value: 'passport-photo', label: 'Passport Photos', price: 200 },
+]
 
 export function findImage(id: string): ImagePlaceholder | undefined {
   return PlaceHolderImages.find(img => img.id === id);

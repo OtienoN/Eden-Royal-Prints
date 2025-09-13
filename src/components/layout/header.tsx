@@ -14,13 +14,10 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { Badge } from "@/components/ui/badge";
-import { useCart } from "@/hooks/use-cart";
 import { Logo } from "@/components/logo";
 
 export function Header() {
   const pathname = usePathname();
-  const { cartCount } = useCart();
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -40,7 +37,9 @@ export function Header() {
               </SheetTrigger>
               <SheetContent side="left" className="w-[300px]">
                 <SheetHeader className="mb-8">
-                  <Logo />
+                  <SheetTitle>
+                    <Logo />
+                  </SheetTitle>
                 </SheetHeader>
                 <nav className="flex flex-col gap-4">
                   {NAV_LINKS.map((link) => (
@@ -85,20 +84,6 @@ export function Header() {
           <div className="flex items-center gap-2">
             <Button asChild size="sm">
               <Link href="/store">Order Now</Link>
-            </Button>
-            <Button variant="ghost" size="icon" asChild>
-              <Link href="/store/cart" aria-label="Open Shopping Cart">
-                <ShoppingCart className="h-5 w-5" />
-                {cartCount > 0 && (
-                  <Badge
-                    variant="destructive"
-                    className="absolute top-1 right-1 h-5 w-5 justify-center p-0 text-xs"
-                  >
-                    {cartCount}
-                  </Badge>
-                )}
-                <span className="sr-only">Cart</span>
-              </Link>
             </Button>
           </div>
         </div>
