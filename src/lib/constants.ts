@@ -276,29 +276,48 @@ export const POPULAR_SERVICES_LINKS = [
 export const QUICK_QUOTE_SERVICES = [
     // Design & Printing
     { value: 'tshirt-printing', label: 'Custom T-shirt Printing', price: 500 },
-    { value: 'business-cards', label: 'Business Cards (100)', price: 1200 },
-    { value: 'posters-banners', label: 'A4 Poster', price: 100 },
-    { value: 'flyers-brochures', label: 'A5 Flyer (single side)', price: 20 },
-    { value: 'logo-design', label: 'Logo Design', price: 3000 },
-    { value: 'mug-printing', label: 'Mug Printing', price: 600 },
+    { value: 'business-cards-100', label: 'Business Cards (100)', price: 1200 },
+    { value: 'a4-poster', label: 'A4 Poster', price: 100 },
+    { value: 'a5-flyer-single', label: 'A5 Flyer (single side)', price: 20 },
+    { value: 'logo-design-basic', label: 'Logo Design (Basic)', price: 3000 },
+    { value: 'mug-printing-regular', label: 'Mug Printing', price: 600 },
+    { value: 'stickers-a4-sheet', label: 'Stickers (A4 sheet)', price: 300 },
+    { value: 'wedding-card-simple', label: 'Wedding Card (Simple)', price: 150 },
+    { value: 'id-card-pvc', label: 'ID Card (PVC)', price: 250 },
+
     // Government & eCitizen
-    { value: 'kra-pin', label: 'KRA PIN Registration', price: 200 },
-    { value: 'helb-application', label: 'HELB Application', price: 400 },
-    { value: 'good-conduct', label: 'Good Conduct Application', price: 300 },
-    { value: 'ecitizen-services', label: 'eCitizen Service', price: 150 },
+    { value: 'kra-pin-reg', label: 'KRA PIN Registration', price: 200 },
+    { value: 'helb-app-first-time', label: 'HELB Application (First time)', price: 500 },
+    { value: 'good-conduct-app', label: 'Good Conduct Application', price: 300 },
+    { value: 'ecitizen-service-basic', label: 'eCitizen Service (Basic)', price: 150 },
+    { value: 'passport-app-support', label: 'Passport Application Support', price: 400 },
+    { value: 'business-name-reg', label: 'Business Name Registration', price: 1500 },
+
     // ICT & Academic
-    { value: 'kuccps-application', label: 'KUCCPS Application', price: 500 },
-    { value: 'cv-writing', label: 'CV Writing', price: 500 },
-    { value: 'plagiarism-check', label: 'Plagiarism Check (per paper)', price: 300 },
+    { value: 'kuccps-app', label: 'KUCCPS Application', price: 500 },
+    { value: 'cv-writing-standard', label: 'CV Writing (Standard)', price: 500 },
+    { value: 'plagiarism-check-per-paper', label: 'Plagiarism Check (per paper)', price: 300 },
+    { value: 'thesis-writing-support', label: 'Thesis Writing Support (per hour)', price: 1000 },
+    { value: 'cover-letter-writing', label: 'Cover Letter Writing', price: 300 },
+
     // Technical & Repair
-    { value: 'pc-laptop-repair', label: 'PC/Laptop Diagnosis', price: 500 },
-    { value: 'software-install', label: 'Software Installation', price: 400 },
+    { value: 'pc-laptop-diagnosis', label: 'PC/Laptop Diagnosis', price: 500 },
+    { value: 'software-install-basic', label: 'Software Installation (Basic)', price: 400 },
+    { value: 'os-install-windows', label: 'OS Installation (Windows)', price: 1000 },
+    { value: 'virus-removal', label: 'Virus Removal', price: 800 },
+    { value: 'phone-screen-repair-quote', label: 'Phone Screen Repair (Quote)', price: 0 },
+
     // Digital Services
-    { value: 'passport-photo', label: 'Passport Photos (4 copies)', price: 200 },
-    { value: 'document-scanning', label: 'Document Scanning (per page)', price: 10 },
+    { value: 'passport-photos-4', label: 'Passport Photos (4 copies)', price: 200 },
+    { value: 'doc-scanning-per-page', label: 'Document Scanning (per page)', price: 10 },
+    { value: 'photo-printing-4x6', label: 'Photo Printing (4x6)', price: 30 },
+    { value: 'pdf-conversion-per-doc', label: 'PDF Conversion (per doc)', price: 50 },
+
     // Cyber & Online
-    { value: 'typing-services', label: 'Typing (per page)', price: 50 },
-    { value: 'data-entry', label: 'Data Entry (per hour)', price: 500 },
+    { value: 'typing-per-page', label: 'Typing (per page)', price: 50 },
+    { value: 'data-entry-per-hour', label: 'Data Entry (per hour)', price: 500 },
+    { value: 'online-form-filling', label: 'Online Form Filling', price: 200 },
+    { value: 'social-media-setup', label: 'Social Media Setup (3 platforms)', price: 1500 },
 ];
 
 export function findImage(id: string): ImagePlaceholder | undefined {
