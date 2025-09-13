@@ -3,9 +3,9 @@
   "placeholderImages": [
     {
       "id": "hero-banner",
-      "description": "A vibrant and modern print shop with various printed materials on display.",
-      "imageUrl": "https://images.unsplash.com/photo-1544725176-7c40e5a71c6e?q=80&w=1600&h=600&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "modern print shop"
+      "description": "A team of black professionals collaborating in a modern board room.",
+      "imageUrl": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1600&h=600&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "professionals boardroom"
     },
     {
       "id": "product-tshirt",
@@ -81,39 +81,39 @@
     },
     {
       "id": "gallery-1",
-      "description": "Man wearing a custom printed black t-shirt",
-      "imageUrl": "https://images.unsplash.com/photo-1622519395992-385a73e4404d?w=400&h=400&fit=crop&crop=center",
-      "imageHint": "tshirt print"
+      "description": "A person using a squeegee in a screen printing process.",
+      "imageUrl": "https://images.unsplash.com/photo-1600427145396-988417955556?w=400&h=400&fit=crop&crop=center",
+      "imageHint": "screen printing"
     },
     {
       "id": "gallery-2",
-      "description": "Close-up of a stack of business cards",
-      "imageUrl": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=400&fit=crop&crop=center",
-      "imageHint": "business cards"
+      "description": "A graphic designer working on a logo on a computer.",
+      "imageUrl": "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=400&h=400&fit=crop&crop=center",
+      "imageHint": "graphic design"
     },
     {
       "id": "gallery-3",
-      "description": "Colorful event poster on a textured wall",
-      "imageUrl": "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=400&h=400&fit=crop&crop=center",
-      "imageHint": "event poster"
+      "description": "A large format printer in action, printing a colorful banner.",
+      "imageUrl": "https://images.unsplash.com/photo-1555431289-960786e34c91?w=400&h=400&fit=crop&crop=center",
+      "imageHint": "printing process"
     },
     {
       "id": "gallery-4",
-      "description": "A person holding a branded coffee mug",
-      "imageUrl": "https://images.unsplash.com/photo-1541167760496-1628856ab772?w=400&h=400&fit=crop&crop=center",
-      "imageHint": "branded mug"
+      "description": "A close-up of a creatively designed business card.",
+      "imageUrl": "https://images.unsplash.com/photo-1559132641-036c82a09514?w=400&h=400&fit=crop&crop=center",
+      "imageHint": "business card"
     },
     {
       "id": "gallery-5",
-      "description": "A professionally designed flyer",
-      "imageUrl": "https://images.unsplash.com/photo-1504805572947-34fad45aed93?w=400&h=400&fit=crop&crop=center",
-      "imageHint": "design flyer"
+      "description": "A responsive website design shown on a laptop and a phone.",
+      "imageUrl": "https://images.unsplash.com/photo-1542744095-fcf48d80b4fd?w=400&h=400&fit=crop&crop=center",
+      "imageHint": "website design"
     },
     {
       "id": "gallery-6",
-      "description": "A roll of freshly printed vinyl stickers",
-      "imageUrl": "https://images.unsplash.com/photo-1623223932297-a4128522e3eb?w=400&h=400&fit=crop&crop=center",
-      "imageHint": "vinyl stickers"
+      "description": "A collection of branded materials, including notebooks and pens.",
+      "imageUrl": "https://images.unsplash.com/photo-1558959356-a85cb6a52f9b?w=400&h=400&fit=crop&crop=center",
+      "imageHint": "branding materials"
     },
     {
       "id": "map-placeholder",
