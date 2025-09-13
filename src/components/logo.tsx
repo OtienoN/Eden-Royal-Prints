@@ -41,7 +41,7 @@ export function Logo({ className }: { className?: string }) {
       className={cn('flex items-center text-primary', className)}
       aria-label="Back to homepage"
     >
-      <NewLogoIcon className="h-24 w-auto" />
+      <NewLogoIcon className="h-16 w-auto" />
     </Link>
   );
 }
