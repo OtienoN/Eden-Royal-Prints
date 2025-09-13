@@ -1,3 +1,4 @@
+
 import type { ImagePlaceholder } from './placeholder-images';
 import { PlaceHolderImages } from './placeholder-images';
 
@@ -109,7 +110,7 @@ export const SOCIAL_LINKS = [
 
 export const CONTACT_DETAILS = {
     phone: '+254 100 663 729',
-    email: 'info@edenroyal.co.ke',
+    email: 'edenroyalprints@gmail.com',
     whatsapp: 'https://wa.me/254100663729',
     address: 'Moi Avenue, Nairobi, Kenya',
 };
