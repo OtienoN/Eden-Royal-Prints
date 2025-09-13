@@ -1,3 +1,4 @@
+
 import Link from "next/link";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
 import * as LucideIcons from "lucide-react";
@@ -31,7 +32,7 @@ export function Footer() {
                     size="icon"
                     asChild
                   >
-                    <a href={social.href} aria-label={social.name}>
+                    <a href={social.href} aria-label={social.name} target="_blank" rel="noopener noreferrer">
                       <Icon className="h-5 w-5 text-primary hover:text-accent" />
                     </a>
                   </Button>
@@ -45,7 +46,7 @@ export function Footer() {
               <h3 className="font-semibold font-headline">{title}</h3>
               <ul className="mt-4 space-y-2">
                 {links.map((link) => (
-                  <li key={link.href}>
+                  <li key={`${link.href}-${link.label}`}>
                     <Link
                       href={link.href}
                       className="text-sm text-muted-foreground hover:text-primary"
