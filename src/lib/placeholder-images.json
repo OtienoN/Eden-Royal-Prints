@@ -8,60 +8,6 @@
       "imageHint": "professionals boardroom"
     },
     {
-      "id": "product-tshirt",
-      "description": "A person wearing a custom-printed t-shirt.",
-      "imageUrl": "https://images.unsplash.com/photo-1576566588028-4147f3842f27?q=80&w=400&h=400&fit=crop",
-      "imageHint": "custom tshirt"
-    },
-    {
-      "id": "product-banner",
-      "description": "A large, vibrant vinyl banner hanging at an event.",
-      "imageUrl": "https://images.unsplash.com/photo-1507925921958-b726f7353116?q=80&w=400&h=400&fit=crop",
-      "imageHint": "event banner"
-    },
-    {
-      "id": "product-business-card",
-      "description": "A stack of professionally designed business cards.",
-      "imageUrl": "https://images.unsplash.com/photo-1615840287214-7ff58936c4cf?q=80&w=400&h=400&fit=crop",
-      "imageHint": "business cards"
-    },
-    {
-      "id": "product-mug",
-      "description": "A ceramic mug with a custom logo printed on it.",
-      "imageUrl": "https://images.unsplash.com/photo-1510616025406-3c27bdb94e2a?q=80&w=400&h=400&fit=crop",
-      "imageHint": "custom mug"
-    },
-    {
-      "id": "product-flyer",
-      "description": "A person holding a colorful and well-designed event flyer.",
-      "imageUrl": "https://images.unsplash.com/photo-1581451529981-9b164a277983?q=80&w=400&h=400&fit=crop",
-      "imageHint": "event flyer"
-    },
-    {
-      "id": "product-poster",
-      "description": "A poster for a concert hanging on a wall.",
-      "imageUrl": "https://images.unsplash.com/photo-1541443339399-790f199e414c?q=80&w=400&h=400&fit=crop",
-      "imageHint": "concert poster"
-    },
-    {
-      "id": "team-member-1",
-      "description": "Portrait of the company's CEO, Nicholas Otieno Ooko.",
-      "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
-      "imageHint": "company ceo"
-    },
-    {
-      "id": "team-member-2",
-      "description": "Portrait of the Creative Director, Emily Ogola.",
-      "imageUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop&crop=face",
-      "imageHint": "creative director"
-    },
-    {
-      "id": "team-member-3",
-      "description": "Portrait of the Technical Director, David Odhiambo.",
-      "imageUrl": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
-      "imageHint": "technical director"
-    },
-    {
       "id": "gallery-1",
       "description": "A person using a squeegee in a screen printing process.",
       "imageUrl": "https://images.unsplash.com/photo-1600427145396-988417955556?w=600&h=400&fit=crop&crop=center",
@@ -98,10 +44,58 @@
       "imageHint": "branding materials"
     },
     {
-      "id": "map-placeholder",
-      "description": "A map showing a pin for a location in Ugunja, Siaya.",
-      "imageUrl": "https://images.unsplash.com/photo-1569336415962-a42945a473ee?q=80&w=1200&h=400&fit=crop",
-      "imageHint": "Siaya map"
+      "id": "gallery-7",
+      "description": "A person filling out an official government form, representing eCitizen services.",
+      "imageUrl": "https://picsum.photos/seed/gallery7/600/800",
+      "imageHint": "government services"
+    },
+    {
+      "id": "gallery-8",
+      "description": "A student working on a laptop in a library, symbolizing academic and ICT services.",
+      "imageUrl": "https://picsum.photos/seed/gallery8/600/400",
+      "imageHint": "academic services"
+    },
+    {
+      "id": "gallery-9",
+      "description": "A technician repairing a laptop computer on a workbench.",
+      "imageUrl": "https://picsum.photos/seed/gallery9/600/400",
+      "imageHint": "laptop repair"
+    },
+    {
+      "id": "gallery-10",
+      "description": "High-quality passport-sized photos being printed.",
+      "imageUrl": "https://picsum.photos/seed/gallery10/600/400",
+      "imageHint": "passport photos"
+    },
+    {
+      "id": "gallery-11",
+      "description": "A person's hands typing on a laptop, representing professional typing and cyber services.",
+      "imageUrl": "https://picsum.photos/seed/gallery11/600/400",
+      "imageHint": "typing services"
+    },
+    {
+      "id": "gallery-12",
+      "description": "A custom-printed mug with a vibrant design.",
+      "imageUrl": "https://picsum.photos/seed/gallery12/600/600",
+      "imageHint": "custom mug"
+    },
+    {
+      "id": "team-member-1",
+      "description": "Portrait of the company's CEO, Nicholas Otieno Ooko.",
+      "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
+      "imageHint": "company ceo"
+    },
+    {
+      "id": "team-member-2",
+      "description": "Portrait of the Creative Director, Emily Ogola.",
+      "imageUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop&crop=face",
+      "imageHint": "creative director"
+    },
+    {
+      "id": "team-member-3",
+      "description": "Portrait of the Technical Director, David Odhiambo.",
+      "imageUrl": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
+      "imageHint": "technical director"
     },
     {
       "id": "about-office",
