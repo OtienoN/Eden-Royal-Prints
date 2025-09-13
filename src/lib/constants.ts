@@ -56,29 +56,34 @@ export const WHY_CHOOSE_US = [
     },
 ];
 
-export const CORE_VALUES = [
-    { name: 'Quality', description: 'We are committed to delivering the highest quality in every product and service.' },
-    { name: 'Creativity', description: 'We foster a culture of creativity and innovation to bring your ideas to life.' },
-    { name: 'Integrity', description: 'We conduct our business with honesty and transparency.' },
-    { name: 'Customer Focus', description: 'Our customers are at the heart of everything we do.' },
-    { name: 'Innovation', description: 'We constantly seek new and better ways to serve our clients.' },
+export const CORE_VALUES_V2 = [
+    { name: 'Royal Quality', description: 'We use only the finest materials and latest technology to ensure every project meets the highest standards. Our quality control process guarantees exceptional results every time.', icon: 'Crown' as const },
+    { name: 'Innovation', description: 'We continuously invest in cutting-edge technology and stay ahead of industry trends to provide our customers with the most advanced solutions available.', icon: 'Lightbulb' as const },
+    { name: 'Integrity', description: 'Honesty, transparency, and ethical business practices are at the core of everything we do. We build trust through consistent, reliable service.', icon: 'Handshake' as const },
+    { name: 'Reliability', description: 'When you choose Eden Royal Prints, you choose dependability. We deliver on time, every time, without compromising on quality or service.', icon: 'Clock' as const },
+    { name: 'Customer Focus', description: 'Your success is our success. We listen to your needs, understand your goals, and tailor our services to exceed your expectations.', icon: 'Users' as const },
+    { name: 'Sustainability', description: 'We\'re committed to environmental responsibility, using eco-friendly materials and processes wherever possible to minimize our environmental impact.', icon: 'Leaf' as const },
 ];
+
 
 export const TEAM_MEMBERS = [
     { 
-        name: 'John Doe', 
+        name: 'Nicholas Otieno Ooko', 
         role: 'Founder & CEO', 
-        imageId: 'team-member-1' 
+        imageId: 'team-member-1',
+        bio: 'Visionary leader with 10+ years of experience in printing and digital services. Passionate about innovation and customer satisfaction.'
     },
     { 
-        name: 'Jane Smith', 
-        role: 'Head of Design', 
-        imageId: 'team-member-2'
+        name: 'Emily Ogola', 
+        role: 'Creative Director', 
+        imageId: 'team-member-2',
+        bio: 'Award-winning designer specializing in branding and visual communication. Brings creativity and technical expertise to every project.'
     },
     { 
-        name: 'Peter Jones', 
-        role: 'Print Master', 
-        imageId: 'team-member-3'
+        name: 'David Odhiambo', 
+        role: 'Technical Director', 
+        imageId: 'team-member-3',
+        bio: 'ICT specialist and technical expert ensuring all our digital services and equipment operate at peak performance.'
     },
 ];
 
@@ -87,19 +92,16 @@ export const TESTIMONIALS = [
         quote: "Exceptional service! They printed 200 custom T-shirts for our event and the quality was outstanding. Fast delivery and professional team.",
         name: "Sarah Wanjiku",
         company: "Event Organizer",
-        imageId: "testimonial-1"
     },
     {
         quote: "Eden Royal Prints helped me with my TIMS registration and business cards. Professional, efficient, and very reasonable prices. Highly recommended!",
         name: "John Kamau",
         company: "Small Business Owner",
-        imageId: "testimonial-2"
     },
     {
         quote: "Their ICT services are top-notch. They helped with my university application and CV writing. The team is knowledgeable and very helpful.",
         name: "Juliet Awino",
         company: "Student",
-        imageId: "testimonial-3"
     }
 ];
 
@@ -134,7 +136,7 @@ export const SOCIAL_LINKS = [
 ];
 
 export const CONTACT_DETAILS = {
-    phone: '+254748738932',
+    phone: '+254100663729',
     email: 'edenroyalprints@gmail.com',
     whatsapp: 'https://wa.me/254100663729',
     address: 'Ugunja, Siaya, Kenya',

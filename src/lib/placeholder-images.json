@@ -44,75 +44,57 @@
       "imageHint": "concert poster"
     },
     {
-      "id": "testimonial-1",
-      "description": "A smiling professional woman in business attire.",
-      "imageUrl": "https://images.unsplash.com/photo-1557862921-37829c790f19?q=80&w=100&h=100&fit=crop",
-      "imageHint": "professional woman"
-    },
-    {
-      "id": "testimonial-2",
-      "description": "A confident man in a suit, founder of a company.",
-      "imageUrl": "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=100&h=100&fit=crop",
-      "imageHint": "businessman suit"
-    },
-    {
-      "id": "testimonial-3",
-      "description": "A happy young woman using a laptop.",
-      "imageUrl": "https://images.unsplash.com/photo-1498842812179-c81beecf902c?q=80&w=100&h=100&fit=crop",
-      "imageHint": "woman laptop"
-    },
-    {
       "id": "team-member-1",
-      "description": "Portrait of the company's CEO.",
-      "imageUrl": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=400&h=400&fit=crop",
+      "description": "Portrait of the company's CEO, Nicholas Otieno Ooko.",
+      "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
       "imageHint": "company ceo"
     },
     {
       "id": "team-member-2",
-      "description": "Portrait of the head designer.",
-      "imageUrl": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=400&h=400&fit=crop",
-      "imageHint": "graphic designer"
+      "description": "Portrait of the Creative Director, Emily Ogola.",
+      "imageUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop&crop=face",
+      "imageHint": "creative director"
     },
     {
       "id": "team-member-3",
-      "description": "Portrait of the print technician.",
-      "imageUrl": "https://images.unsplash.com/photo-1622979313437-def380f5546d?q=80&w=400&h=400&fit=crop",
-      "imageHint": "print technician"
+      "description": "Portrait of the Technical Director, David Odhiambo.",
+      "imageUrl": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
+      "imageHint": "technical director"
     },
     {
       "id": "gallery-1",
       "description": "A person using a squeegee in a screen printing process.",
-      "imageUrl": "https://images.unsplash.com/photo-1600427145396-988417955556?w=400&h=400&fit=crop&crop=center",
+      "imageUrl": "https://images.unsplash.com/photo-1600427145396-988417955556?w=600&h=400&fit=crop&crop=center",
       "imageHint": "screen printing"
     },
     {
       "id": "gallery-2",
       "description": "A graphic designer working on a logo on a computer.",
-      "imageUrl": "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=400&h=400&fit=crop&crop=center",
+      "imageUrl": "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=600&h=400&fit=crop&crop=center",
       "imageHint": "graphic design"
     },
     {
       "id": "gallery-3",
       "description": "A large format printer in action, printing a colorful banner.",
-      "imageUrl": "https://images.unsplash.com/photo-1555431289-960786e34c91?w=400&h=400&fit=crop&crop=center",
+      "imageUrl": "https://images.unsplash.com/photo-1555431289-960786e34c91?w=600&h=400&fit=crop&crop=center",
       "imageHint": "printing process"
     },
     {
       "id": "gallery-4",
       "description": "A close-up of a creatively designed business card.",
-      "imageUrl": "https://images.unsplash.com/photo-1559132641-036c82a09514?w=400&h=400&fit=crop&crop=center",
+      "imageUrl": "https://images.unsplash.com/photo-1559132641-036c82a09514?w=600&h=400&fit=crop&crop=center",
       "imageHint": "business card"
     },
     {
       "id": "gallery-5",
       "description": "A responsive website design shown on a laptop and a phone.",
-      "imageUrl": "https://images.unsplash.com/photo-1542744095-fcf48d80b4fd?w=400&h=400&fit=crop&crop=center",
+      "imageUrl": "https://images.unsplash.com/photo-1542744095-fcf48d80b4fd?w=600&h=400&fit=crop&crop=center",
       "imageHint": "website design"
     },
     {
       "id": "gallery-6",
       "description": "A collection of branded materials, including notebooks and pens.",
-      "imageUrl": "https://images.unsplash.com/photo-1558959356-a85cb6a52f9b?w=400&h=400&fit=crop&crop=center",
+      "imageUrl": "https://images.unsplash.com/photo-1558959356-a85cb6a52f9b?w=600&h=400&fit=crop&crop=center",
       "imageHint": "branding materials"
     },
     {
@@ -120,6 +102,12 @@
       "description": "A map showing a pin for a location in Ugunja, Siaya.",
       "imageUrl": "https://images.unsplash.com/photo-1569336415962-a42945a473ee?q=80&w=1200&h=400&fit=crop",
       "imageHint": "Siaya map"
+    },
+    {
+      "id": "about-office",
+      "description": "A modern and collaborative office workspace with professionals working.",
+      "imageUrl": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&h=400&fit=crop",
+      "imageHint": "modern office"
     }
   ]
 }
