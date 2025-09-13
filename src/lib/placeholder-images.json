@@ -81,39 +81,39 @@
     },
     {
       "id": "gallery-1",
-      "description": "Custom T-shirt printing",
-      "imageUrl": "https://images.unsplash.com/photo-1581803118522-7b72a50f7e9f?w=400&h=400&fit=crop&crop=center",
+      "description": "Man wearing a custom printed black t-shirt",
+      "imageUrl": "https://images.unsplash.com/photo-1622519395992-385a73e4404d?w=400&h=400&fit=crop&crop=center",
       "imageHint": "tshirt print"
     },
     {
       "id": "gallery-2",
-      "description": "Business card design",
-      "imageUrl": "https://images.unsplash.com/photo-1586953207917-9d6edced4042?w=400&h=400&fit=crop&crop=center",
-      "imageHint": "branding materials"
+      "description": "Close-up of a stack of business cards",
+      "imageUrl": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=400&fit=crop&crop=center",
+      "imageHint": "business cards"
     },
     {
       "id": "gallery-3",
-      "description": "Poster printing",
-      "imageUrl": "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=400&fit=crop&crop=center",
+      "description": "Colorful event poster on a textured wall",
+      "imageUrl": "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=400&h=400&fit=crop&crop=center",
       "imageHint": "event poster"
     },
     {
       "id": "gallery-4",
-      "description": "Digital services",
-      "imageUrl": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=400&fit=crop&crop=center",
-      "imageHint": "logo design"
+      "description": "A person holding a branded coffee mug",
+      "imageUrl": "https://images.unsplash.com/photo-1541167760496-1628856ab772?w=400&h=400&fit=crop&crop=center",
+      "imageHint": "branded mug"
     },
     {
       "id": "gallery-5",
-      "description": "Vinyl branding",
-      "imageUrl": "https://images.unsplash.com/photo-1636953056323-9c09fdd74fa6?w=400&h=400&fit=crop&crop=center",
-      "imageHint": "outdoor banner"
+      "description": "A professionally designed flyer",
+      "imageUrl": "https://images.unsplash.com/photo-1504805572947-34fad45aed93?w=400&h=400&fit=crop&crop=center",
+      "imageHint": "design flyer"
     },
     {
       "id": "gallery-6",
-      "description": "Professional documentation",
-      "imageUrl": "https://images.unsplash.com/photo-1542314831-068cd1dbb563?q=80&w=400&h=400&fit=crop",
-      "imageHint": "company mug"
+      "description": "A roll of freshly printed vinyl stickers",
+      "imageUrl": "https://images.unsplash.com/photo-1623223932297-a4128522e3eb?w=400&h=400&fit=crop&crop=center",
+      "imageHint": "vinyl stickers"
     },
     {
       "id": "map-placeholder",
@@ -123,5 +123,3 @@
     }
   ]
 }
-
-    
