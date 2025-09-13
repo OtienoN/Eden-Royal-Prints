@@ -1,9 +1,10 @@
+
 "use client";
 
 import { useActionState } from "react";
 import { useFormStatus } from "react-dom";
 import { useEffect, useRef, useState } from "react";
-import { submitOrder, type OrderState } from "@/app/store/actions";
+import { submitOrder, type OrderState, type OrderFormData } from "@/app/store/actions";
 import { useToast } from "@/hooks/use-toast";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -18,8 +19,8 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Checkbox } from "@/components/ui/checkbox";
-import { Loader2, Paperclip } from "lucide-react";
-import { DETAILED_SERVICES } from "@/lib/constants";
+import { Loader2 } from "lucide-react";
+import { DETAILED_SERVICES, CONTACT_DETAILS } from "@/lib/constants";
 
 const initialState: OrderState = {};
 
@@ -28,7 +29,7 @@ function SubmitButton() {
   return (
     <Button type="submit" size="lg" className="w-full" disabled={pending}>
       {pending && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
-      {pending ? "Submitting..." : "Submit Order Request"}
+      {pending ? "Submitting..." : "Submit & Send via WhatsApp"}
     </Button>
   );
 }
@@ -41,6 +42,32 @@ const serviceOptions: Record<string, string[]> = {
   "digital-services": DETAILED_SERVICES.find(s => s.id === 'digital-services')?.items || [],
   "cyber-services": DETAILED_SERVICES.find(s => s.id === 'cyber-services')?.items || [],
 };
+
+const formatOrderForWhatsApp = (order: OrderFormData) => {
+    let message = `*New Order Request from ${order.fullName}*\n\n`;
+
+    message += `*Service:* ${order.serviceCategory.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}\n`;
+    if(order.specificService) message += `*Specifics:* ${order.specificService}\n`;
+    if(order.projectTitle) message += `*Project:* ${order.projectTitle}\n\n`;
+
+    message += `*Description:*\n${order.description}\n\n`;
+
+    message += "*Details:*\n";
+    if(order.quantity) message += `- Quantity: ${order.quantity}\n`;
+    if(order.size) message += `- Size: ${order.size}\n`;
+    if(order.colors) message += `- Colors: ${order.colors}\n`;
+    if(order.deadline) message += `- Deadline: ${order.deadline}\n`;
+    if(order.urgency) message += `- Urgency: ${order.urgency}\n`;
+    if(order.deliveryMethod) message += `- Delivery: ${order.deliveryMethod}\n`;
+    if(order.budget) message += `- Budget: ${order.budget}\n`;
+
+    if(order.specialInstructions) message += `\n*Instructions:*\n${order.specialInstructions}\n`;
+    
+    message += `\n*Contact:*\n- Phone: ${order.phone}\n- Email: ${order.email}`;
+    if(order.location) message += `\n- Location: ${order.location}`;
+
+    return encodeURIComponent(message);
+}
 
 
 export function OrderForm() {
@@ -62,11 +89,18 @@ export function OrderForm() {
             description: state.message,
             variant: "destructive"
         })
-    } else if (state.message) {
+    } else if (state.message && state.order) {
       toast({
         title: "Success!",
         description: state.message,
       });
+
+      const whatsappMessage = formatOrderForWhatsApp(state.order);
+      const whatsappUrl = `https://wa.me/${CONTACT_DETAILS.phone}?text=${whatsappMessage}`;
+      
+      // Redirect to WhatsApp
+      window.open(whatsappUrl, '_blank');
+
       formRef.current?.reset();
       setSelectedCategory("");
     }
@@ -267,7 +301,7 @@ export function OrderForm() {
 
           <SubmitButton />
           <p className="text-xs text-muted-foreground text-center">
-            By submitting this order, you agree to our terms and conditions. You will receive a quote within 2 hours during business hours.
+            By submitting this order, you agree to our terms and conditions. You will be redirected to WhatsApp to send your order details.
           </p>
         </form>
       </CardContent>

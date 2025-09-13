@@ -1,3 +1,4 @@
+
 "use server";
 
 import { z } from "zod";
@@ -23,8 +24,11 @@ const orderSchema = z.object({
   newsletter: z.string().optional(),
 });
 
+export type OrderFormData = z.infer<typeof orderSchema>;
+
 export type OrderState = {
   message?: string;
+  order?: OrderFormData;
   errors?: {
     [key: string]: string[] | undefined;
   };
@@ -70,6 +74,7 @@ export async function submitOrder(
   console.log("New Order Submitted:", validatedFields.data);
 
   return {
-    message: "Thank you! Your order request has been submitted successfully. We will send a quote to your email shortly.",
+    message: "Thank you! Your order request has been submitted successfully. We will redirect you to WhatsApp to confirm.",
+    order: validatedFields.data,
   };
 }
