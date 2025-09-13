@@ -27,10 +27,10 @@ function NewLogoIcon({ className }: { className?: string }) {
         <path d="M211.5 86.4H187.1V92.5H211.5V86.4z" />
         <path d="M187.1 132.8H211.5V138.9H187.1V132.8z" />
       </g>
-      <text x="50%" y="170" dominant-baseline="middle" text-anchor="middle" font-family="serif" font-size="16" font-weight="bold">{COMPANY_NAME}</text>
-      <text x="50%" y="188" dominant-baseline="middle" text-anchor="middle" font-family="serif" font-size="10" font-style="italic">House Of Quality Prints & Services</text>
-      <line x1="80" y1="178" x2="120" y2="178" stroke="currentColor" stroke-width="1" />
-      <line x1="280" y1="178" x2="320" y2="178" stroke="currentColor" stroke-width="1" />
+      <text x="50%" y="170" dominantBaseline="middle" textAnchor="middle" fontFamily="serif" fontSize="16" fontWeight="bold">{COMPANY_NAME}</text>
+      <text x="50%" y="188" dominantBaseline="middle" textAnchor="middle" fontFamily="serif" fontSize="10" fontStyle="italic">House Of Quality Prints & Services</text>
+      <line x1="80" y1="178" x2="120" y2="178" stroke="currentColor" strokeWidth="1" />
+      <line x1="280" y1="178" x2="320" y2="178" stroke="currentColor" strokeWidth="1" />
     </svg>
   );
 }
