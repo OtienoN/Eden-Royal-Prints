@@ -1,6 +1,6 @@
 "use client";
 
-import { useFormState, useFormStatus } from "react-dom";
+import { useActionState, useFormStatus } from "react";
 import { useEffect, useRef, useState } from "react";
 import { submitOrder, type OrderState } from "@/app/store/actions";
 import { useToast } from "@/hooks/use-toast";
@@ -43,7 +43,7 @@ const serviceOptions: Record<string, string[]> = {
 
 
 export function OrderForm() {
-  const [state, formAction] = useFormState(submitOrder, initialState);
+  const [state, formAction] = useActionState(submitOrder, initialState);
   const { toast } = useToast();
   const formRef = useRef<HTMLFormElement>(null);
   const [selectedCategory, setSelectedCategory] = useState("");

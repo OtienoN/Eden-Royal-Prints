@@ -1,6 +1,6 @@
 "use client";
 
-import { useFormState, useFormStatus } from "react-dom";
+import { useActionState, useFormStatus } from "react";
 import { useEffect } from "react";
 import { getQuote, type QuoteState } from "@/app/quote/actions";
 import { Button } from "@/components/ui/button";
@@ -35,7 +35,7 @@ function SubmitButton() {
 }
 
 export function QuoteForm() {
-  const [state, formAction] = useFormState(getQuote, initialState);
+  const [state, formAction] = useActionState(getQuote, initialState);
   const { toast } = useToast();
 
   useEffect(() => {
