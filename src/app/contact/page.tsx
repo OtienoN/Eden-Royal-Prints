@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from 'next/link';
-import { Mail, MapPin, Phone, MessageCircle, Clock, CheckCircle, Car, Bus, Wheelchair } from "lucide-react";
+import { Mail, MapPin, Phone, MessageCircle, Clock, CheckCircle, Car, Bus, Accessibility } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { CONTACT_DETAILS, findImage, FAQS } from "@/lib/constants";
@@ -201,7 +201,7 @@ export default function ContactPage() {
                   <p className="text-sm text-muted-foreground">Easily accessible by matatu and bus</p>
               </div>
               <div>
-                  <Wheelchair className="h-8 w-8 mx-auto text-primary mb-2" />
+                  <Accessibility className="h-8 w-8 mx-auto text-primary mb-2" />
                   <h5 className="font-semibold mb-1">Accessible</h5>
                   <p className="text-sm text-muted-foreground">Wheelchair accessible entrance</p>
               </div>
