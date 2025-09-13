@@ -36,7 +36,7 @@ const prompt = ai.definePrompt({
   name: 'serviceQuotePrompt',
   input: {schema: ServiceQuoteInputSchema},
   output: {schema: ServiceQuoteOutputSchema},
-  prompt: `You are an expert pricing specialist for Eden Royal Prints & Color Solutions, a Kenyan company specializing in branding, screen printing, cyber services, and graphic design. Your task is to provide an accurate and competitive price quote based on the service description provided by the customer.
+  prompt: `You are an expert pricing specialist for Eden Royal Digital Hub, a Kenyan company specializing in branding, screen printing, cyber services, and graphic design. Your task is to provide an accurate and competitive price quote based on the service description provided by the customer.
 
 Service Description: {{{serviceDescription}}}
 
@@ -45,7 +45,7 @@ Consider the following factors when generating the quote:
 *   The materials required
 *   The labor involved
 *   Market rates in Kenya
-*   Eden Royal Prints & Color Solutions' pricing strategy
+*   Eden Royal Digital Hub's pricing strategy
 
 Provide the estimated price in Kenyan Shillings (KES) and include a detailed breakdown of the costs.
 `,
@@ -62,3 +62,5 @@ const generateServiceQuoteFlow = ai.defineFlow(
     return output!;
   }
 );
+
+    

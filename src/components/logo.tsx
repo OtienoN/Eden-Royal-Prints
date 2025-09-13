@@ -12,7 +12,9 @@ export function Logo({ className }: { className?: string }) {
       )}
       aria-label="Back to homepage"
     >
-      {COMPANY_NAME.split(' and ')[0]}
+      {COMPANY_NAME}
     </Link>
   );
 }
+
+    

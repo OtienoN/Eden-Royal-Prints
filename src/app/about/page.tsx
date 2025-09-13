@@ -31,7 +31,7 @@ export default function AboutPage() {
         <div className="absolute inset-0 bg-primary/80" />
         <div className="relative z-10 container">
           <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl">
-            About <span className="text-accent">Eden Royal Prints</span>
+            About <span className="text-accent">Eden Royal Digital Hub</span>
           </h1>
           <p className="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-neutral-200">
             Excellence, innovation, and royal quality in every service we
@@ -49,8 +49,7 @@ export default function AboutPage() {
               </h2>
               <p>
                 Founded with a vision to revolutionize the printing and digital
-                services industry in Kenya, Eden Royal Prints and Color
-                Solutions has grown from a small startup to a trusted partner
+                services industry in Kenya, Eden Royal Digital Hub has grown from a small startup to a trusted partner
                 for businesses, individuals, and organizations across the
                 country.
               </p>
@@ -180,7 +179,7 @@ export default function AboutPage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold tracking-tight">Meet Our Team</h2>
             <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-              The passionate professionals behind Eden Royal Prints
+              The passionate professionals behind Eden Royal Digital Hub
             </p>
           </div>
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -243,8 +242,7 @@ export default function AboutPage() {
             Ready to Experience the Royal Treatment?
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-primary-foreground/90">
-            Join our family of satisfied customers and discover why Eden Royal
-            Prints is Kenya's trusted choice for printing and digital services.
+            Join our family of satisfied customers and discover why Eden Royal Digital Hub is Kenya's trusted choice for printing and digital services.
           </p>
           <div className="mt-8 flex gap-4 justify-center flex-wrap">
             <Button asChild size="lg" variant="secondary">
@@ -264,3 +262,5 @@ export default function AboutPage() {
     </>
   );
 }
+
+    

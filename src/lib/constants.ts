@@ -1,9 +1,10 @@
+
 import type { LucideIcon } from "lucide-react";
 import type { ImagePlaceholder } from './placeholder-images';
 import { PlaceHolderImages } from './placeholder-images';
 
-export const APP_NAME = "Eden Royal Prints";
-export const COMPANY_NAME = "Eden Royal Prints";
+export const APP_NAME = "Eden Royal Digital Hub";
+export const COMPANY_NAME = "Eden Royal Digital Hub";
 
 export const NAV_LINKS = [
   { href: '/', label: 'Home' },
@@ -114,7 +115,7 @@ export const WHY_CHOOSE_US = [
         icon: 'Clock' as const
     },
     {
-        title: 'Expert Team', 
+        title: 'Expert Team',
         description: 'Skilled professionals dedicated to bringing your vision to life', 
         icon: 'Users' as const
     },
@@ -157,7 +158,7 @@ export const CORE_VALUES_V2 = [
     { name: 'Royal Quality', description: 'We use only the finest materials and latest technology to ensure every project meets the highest standards. Our quality control process guarantees exceptional results every time.', icon: 'Crown' as const },
     { name: 'Innovation', description: 'We continuously invest in cutting-edge technology and stay ahead of industry trends to provide our customers with the most advanced solutions available.', icon: 'Lightbulb' as const },
     { name: 'Integrity', description: 'Honesty, transparency, and ethical business practices are at the core of everything we do. We build trust through consistent, reliable service.', icon: 'Handshake' as const },
-    { name: 'Reliability', description: 'When you choose Eden Royal Prints, you choose dependability. We deliver on time, every time, without compromising on quality or service.', icon: 'Clock' as const },
+    { name: 'Reliability', description: 'When you choose Eden Royal Digital Hub, you choose dependability. We deliver on time, every time, without compromising on quality or service.', icon: 'Clock' as const },
     { name: 'Customer Focus', description: 'Your success is our success. We listen to your needs, understand your goals, and tailor our services to exceed your expectations.', icon: 'Users' as const },
     { name: 'Sustainability', description: 'We\'re committed to environmental responsibility, using eco-friendly materials and processes wherever possible to minimize our environmental impact.', icon: 'Leaf' as const },
 ];
@@ -190,7 +191,7 @@ export const TESTIMONIALS = [
         company: "Event Organizer",
     },
     {
-        quote: "Eden Royal Prints helped me with my TIMS registration and business cards. Professional, efficient, and very reasonable prices. Highly recommended!",
+        quote: "Eden Royal Digital Hub helped me with my TIMS registration and business cards. Professional, efficient, and very reasonable prices. Highly recommended!",
         name: "John Kamau",
         company: "Small Business Owner",
     },
@@ -287,3 +288,5 @@ export const FAQS = [
 export function findImage(id: string): ImagePlaceholder | undefined {
   return PlaceHolderImages.find(img => img.id === id);
 }
+
+    

@@ -7,7 +7,7 @@ export function CallToAction() {
             <div className="container text-center">
                 <h2 className="text-3xl font-bold tracking-tight">Ready to Get Started?</h2>
                 <p className="mt-4 max-w-2xl mx-auto text-lg text-primary-foreground/90">
-                    Join hundreds of satisfied customers who trust Eden Royal Prints for their printing and digital needs.
+                    Join hundreds of satisfied customers who trust Eden Royal Digital Hub for their printing and digital needs.
                 </p>
                 <div className="mt-8 flex gap-4 justify-center flex-wrap">
                     <Button asChild size="lg" variant="secondary">
@@ -21,3 +21,5 @@ export function CallToAction() {
         </section>
     );
 }
+
+    

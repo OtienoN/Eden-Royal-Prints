@@ -6,7 +6,7 @@ export function WhyChooseUs() {
     <section className="py-12 md:py-24 bg-secondary">
       <div className="container">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Why Choose Eden Royal Prints?</h2>
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Why Choose Eden Royal Digital Hub?</h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
             Experience the royal treatment with our premium services
           </p>
@@ -29,3 +29,5 @@ export function WhyChooseUs() {
     </section>
   );
 }
+
+    
