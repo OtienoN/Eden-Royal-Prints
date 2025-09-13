@@ -4,10 +4,10 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, Search, ShoppingCart } from "lucide-react";
 
-import { NAV_LINKS } from "@/lib/constants";
+import { NAV_LINKS, APP_NAME } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetDescription, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { Badge } from "@/components/ui/badge";
 import { useCart } from "@/hooks/use-cart";
 import { Logo } from "@/components/logo";
@@ -33,8 +33,12 @@ export function Header() {
                 </Button>
               </SheetTrigger>
               <SheetContent side="left" className="w-[300px] sm:w-[400px]">
-                <SheetTitle className="sr-only">Menu</SheetTitle>
-                <SheetDescription className="sr-only">Main navigation menu</SheetDescription>
+                <SheetHeader>
+                  <SheetTitle>{APP_NAME}</SheetTitle>
+                  <SheetDescription>
+                    Navigate through our application
+                  </SheetDescription>
+                </SheetHeader>
                 <nav className="flex flex-col gap-4 mt-8">
                   <Logo />
                   {NAV_LINKS.map((link) => (

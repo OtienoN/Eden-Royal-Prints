@@ -1,7 +1,7 @@
 import type { ImagePlaceholder } from './placeholder-images';
 import { PlaceHolderImages } from './placeholder-images';
 
-export const APP_NAME = "Eden Royal Digital";
+export const APP_NAME = "Eden Royal Prints";
 export const COMPANY_NAME = "Eden Royal Prints & Color Solutions";
 
 export const NAV_LINKS = [
