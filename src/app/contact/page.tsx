@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Mail, MapPin, Phone, MessageCircle } from "lucide-react";
+import { Mail, MapPin, Phone, MessageCircle, Clock } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { CONTACT_DETAILS, findImage } from "@/lib/constants";
@@ -61,6 +61,13 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold">Address</h3>
                     <p className="text-muted-foreground">{CONTACT_DETAILS.address}</p>
+                  </div>
+                </div>
+                 <div className="flex items-start gap-4">
+                  <Clock className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+                  <div>
+                    <h3 className="font-semibold">Opening Hours</h3>
+                    <p className="text-muted-foreground">{CONTACT_DETAILS.openingHours}</p>
                   </div>
                 </div>
               </CardContent>

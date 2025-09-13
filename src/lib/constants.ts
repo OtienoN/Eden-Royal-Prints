@@ -1,9 +1,9 @@
-
+import type { LucideIcon } from "lucide-react";
 import type { ImagePlaceholder } from './placeholder-images';
 import { PlaceHolderImages } from './placeholder-images';
 
 export const APP_NAME = "Eden Royal Prints";
-export const COMPANY_NAME = "Eden Royal Prints & Color Solutions";
+export const COMPANY_NAME = "Eden Royal Prints and Color Solutions";
 
 export const NAV_LINKS = [
   { href: '/', label: 'Home' },
@@ -14,27 +14,46 @@ export const NAV_LINKS = [
   { href: '/contact', label: 'Contact' },
 ];
 
-export const SERVICES = [
+export const SERVICES: { title: string; description: string; icon: keyof typeof import("lucide-react") }[] = [
   {
-    title: 'Printing & Branding',
-    description: 'High-quality printing for T-shirts, Flyers, Banners, Posters, and Business Cards.',
-    icon: 'Printer' as const,
+    title: 'Design & Printing',
+    description: 'Professional T-shirt printing, business cards, posters, flyers, and custom vinyl branding that makes your brand stand out.',
+    icon: 'Palette',
   },
   {
-    title: 'Screen Printing',
-    description: 'Custom screen printing for apparel and promotional materials with vibrant, durable inks.',
-    icon: 'Shirt' as const,
+    title: 'ICT & Digital Services',
+    description: 'Complete ICT solutions including online applications, plagiarism detection, CV writing, and eLearning support.',
+    icon: 'Laptop',
   },
   {
-    title: 'Cyber Café Services',
-    description: 'KRA/HELB/TSC/TIMS services, CV writing, photocopying, scanning, laminating, and internet.',
-    icon: 'Laptop' as const,
+    title: 'Government & Cyber Services',
+    description: 'Expert assistance with eCitizen, TIMS, TSC, NTSA services, plus typing, proofreading, and account creation.',
+    icon: 'FileText',
   },
-  {
-    title: 'Graphic Design & Logo Creation',
-    description: 'Professional graphic design and unique logo creation to build your brand identity.',
-    icon: 'Palette' as const,
-  },
+];
+
+
+export const WHY_CHOOSE_US = [
+    { 
+        title: 'Royal Quality', 
+        description: 'Premium materials and cutting-edge technology for exceptional results', 
+        icon: 'Crown' as const
+    },
+    { 
+        title: 'Fast Turnaround', 
+        description: 'Quick delivery without compromising on quality', 
+        icon: 'Clock' as const
+    },
+    { 
+        title: 'Expert Team', 
+        description: 'Skilled professionals dedicated to bringing your vision to life', 
+        icon: 'Users' as const
+    },
+    { 
+        title: 'Customer First', 
+        description: 'Personalized service and support every step of the way', 
+        icon: 'HeartHandshake' as const
+    },
 ];
 
 export const CORE_VALUES = [
@@ -65,35 +84,41 @@ export const TEAM_MEMBERS = [
 
 export const TESTIMONIALS = [
     {
-        quote: "The quality of the business cards I ordered was exceptional. The team was professional and delivered on time. Highly recommended!",
-        name: "Alice Johnson",
-        company: "ABC Corp",
+        quote: "Exceptional service! They printed 200 custom T-shirts for our event and the quality was outstanding. Fast delivery and professional team.",
+        name: "Sarah Wanjiku",
+        company: "Event Organizer",
         imageId: "testimonial-1"
     },
     {
-        quote: "Eden Royal designed our new logo and branding materials. Their creativity and attention to detail were outstanding. We've seen a huge improvement in our brand recognition.",
-        name: "Mark Ochieng",
-        company: "Ochieng & Sons Ltd.",
+        quote: "Eden Royal Prints helped me with my TIMS registration and business cards. Professional, efficient, and very reasonable prices. Highly recommended!",
+        name: "John Kamau",
+        company: "Small Business Owner",
         imageId: "testimonial-2"
     },
     {
-        quote: "Fast, reliable, and affordable cyber cafe services. They helped me with all my KRA filings smoothly. Will definitely be back!",
-        name: "Sarah Wanjiru",
-        company: "Individual",
+        quote: "Their ICT services are top-notch. They helped with my university application and CV writing. The team is knowledgeable and very helpful.",
+        name: "Juliet Awino",
+        company: "Student",
         imageId: "testimonial-3"
     }
 ];
 
 export const FOOTER_LINKS = {
-    'Company': [
+    'Quick Links': [
+        { href: '/', label: 'Home' },
         { href: '/about', label: 'About Us' },
         { href: '/services', label: 'Services' },
         { href: '/gallery', label: 'Gallery' },
+        { href: '/contact', label: 'Contact' },
+        { href: '/store', label: 'Order Now'},
     ],
-    'Store': [
-        { href: '/store', label: 'All Products' },
-        { href: '/store/cart', label: 'My Cart' },
-        { href: '/quote', label: 'Request a Quote' },
+    'Our Services': [
+      { href: '/services', label: 'T-shirt Printing' },
+      { href: '/services', label: 'Business Cards' },
+      { href: '/services', label: 'eCitizen Services' },
+      { href: '/services', label: 'Online Applications' },
+      { href: '/services', label: 'PC Repairs' },
+      { href: '/services', label: 'Digital Photography' },
     ],
     'Support': [
         { href: '/contact', label: 'Contact Us' },
@@ -109,10 +134,11 @@ export const SOCIAL_LINKS = [
 ];
 
 export const CONTACT_DETAILS = {
-    phone: '+254 100 663 729',
+    phone: '+254748738932',
     email: 'edenroyalprints@gmail.com',
     whatsapp: 'https://wa.me/254100663729',
-    address: 'Moi Avenue, Nairobi, Kenya',
+    address: 'Ugunja, Siaya, Kenya',
+    openingHours: "Mon-Fri: 8AM-6PM, Sat: 9AM-4PM"
 };
 
 export function findImage(id: string): ImagePlaceholder | undefined {

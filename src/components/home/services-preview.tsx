@@ -10,12 +10,12 @@ export function ServicesPreview() {
     <section className="py-12 md:py-24">
       <div className="container">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Our Services</h2>
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Our Premium Services</h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-            We offer a wide range of professional services to meet your needs.
+            Comprehensive solutions for all your printing, digital, and business needs
           </p>
         </div>
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           {SERVICES.map((service) => {
             const Icon = LucideIcons[service.icon];
             return (
@@ -27,18 +27,14 @@ export function ServicesPreview() {
                 </CardHeader>
                 <CardContent className="flex-1">
                   <CardTitle className="text-xl mb-2">{service.title}</CardTitle>
-                  <p className="text-muted-foreground">{service.description}</p>
+                  <p className="text-muted-foreground mb-4">{service.description}</p>
+                   <Button asChild variant="secondary">
+                      <Link href="/services">Learn More</Link>
+                   </Button>
                 </CardContent>
               </Card>
             );
           })}
-        </div>
-        <div className="mt-12 text-center">
-          <Button asChild size="lg" variant="outline">
-            <Link href="/services">
-              Explore All Services <ArrowRight className="ml-2 h-4 w-4" />
-            </Link>
-          </Button>
         </div>
       </div>
     </section>

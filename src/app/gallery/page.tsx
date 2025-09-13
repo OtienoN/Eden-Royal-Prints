@@ -26,15 +26,18 @@ export default function GalleryPage() {
         {galleryImages.map((image) => (
           <Dialog key={image.id}>
             <DialogTrigger asChild>
-              <div className="break-inside-avoid cursor-pointer">
+              <div className="break-inside-avoid cursor-pointer group relative">
                 <Image
                   src={image.imageUrl}
                   alt={image.description}
                   width={600}
                   height={400}
-                  className="rounded-lg shadow-md w-full h-auto object-cover hover:opacity-80 transition-opacity"
+                  className="rounded-lg shadow-md w-full h-auto object-cover transition-opacity"
                   data-ai-hint={image.imageHint}
                 />
+                 <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity rounded-lg">
+                    <p className="text-white text-lg font-semibold text-center p-4">{image.description}</p>
+                </div>
               </div>
             </DialogTrigger>
             <DialogContent className="max-w-4xl">

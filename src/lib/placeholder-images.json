@@ -4,7 +4,7 @@
     {
       "id": "hero-banner",
       "description": "A vibrant and modern print shop with various printed materials on display.",
-      "imageUrl": "https://picsum.photos/seed/hero/1600/600",
+      "imageUrl": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1600&h=800&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "print shop"
     },
     {
@@ -81,45 +81,45 @@
     },
     {
       "id": "gallery-1",
-      "description": "Close-up of a high-quality screen printed t-shirt.",
-      "imageUrl": "https://picsum.photos/seed/gallery1/600/400",
+      "description": "Custom T-shirt printing",
+      "imageUrl": "https://images.unsplash.com/photo-1581803118522-7b72a50f7e9f?w=400&h=400&fit=crop&crop=center",
       "imageHint": "tshirt print"
     },
     {
       "id": "gallery-2",
-      "description": "A set of branding materials including letterhead and business cards.",
-      "imageUrl": "https://picsum.photos/seed/gallery2/600/400",
+      "description": "Business card design",
+      "imageUrl": "https://images.unsplash.com/photo-1586953207917-9d6edced4042?w=400&h=400&fit=crop&crop=center",
       "imageHint": "branding materials"
     },
     {
       "id": "gallery-3",
-      "description": "A creative and colorful event poster.",
-      "imageUrl": "https://picsum.photos/seed/gallery3/600/400",
+      "description": "Poster printing",
+      "imageUrl": "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=400&fit=crop&crop=center",
       "imageHint": "event poster"
     },
     {
       "id": "gallery-4",
-      "description": "A collection of custom designed logos.",
-      "imageUrl": "https://picsum.photos/seed/gallery4/600/400",
+      "description": "Digital services",
+      "imageUrl": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=400&fit=crop&crop=center",
       "imageHint": "logo design"
     },
     {
       "id": "gallery-5",
-      "description": "A large format banner for an outdoor advertisement.",
-      "imageUrl": "https://picsum.photos/seed/gallery5/600/400",
+      "description": "Vinyl branding",
+      "imageUrl": "https://images.unsplash.com/photo-1636953056323-9c09fdd74fa6?w=400&h=400&fit=crop&crop=center",
       "imageHint": "outdoor banner"
     },
     {
       "id": "gallery-6",
-      "description": "A beautifully designed mug with a company logo.",
-      "imageUrl": "https://picsum.photos/seed/gallery6/600/400",
+      "description": "Professional documentation",
+      "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=center",
       "imageHint": "company mug"
     },
     {
       "id": "map-placeholder",
-      "description": "A map showing a pin for a location in Nairobi.",
+      "description": "A map showing a pin for a location in Ugunja, Siaya.",
       "imageUrl": "https://picsum.photos/seed/map/1200/400",
-      "imageHint": "Nairobi map"
+      "imageHint": "Siaya map"
     }
   ]
 }

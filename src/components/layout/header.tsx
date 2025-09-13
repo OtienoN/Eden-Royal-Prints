@@ -7,7 +7,13 @@ import { Menu, Search, ShoppingCart } from "lucide-react";
 import { NAV_LINKS, APP_NAME } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 import { Badge } from "@/components/ui/badge";
 import { useCart } from "@/hooks/use-cart";
 import { Logo } from "@/components/logo";
@@ -19,7 +25,7 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center">
-        <div className="mr-4 hidden md:flex">
+        <div className="mr-8 hidden md:flex">
           <Logo />
         </div>
 
@@ -32,15 +38,11 @@ export function Header() {
                   <span className="sr-only">Toggle Menu</span>
                 </Button>
               </SheetTrigger>
-              <SheetContent side="left" className="w-[300px] sm:w-[400px]">
-                <SheetHeader>
-                  <SheetTitle>{APP_NAME}</SheetTitle>
-                  <SheetDescription>
-                    Navigate through our application
-                  </SheetDescription>
-                </SheetHeader>
-                <nav className="flex flex-col gap-4 mt-8">
+              <SheetContent side="left" className="w-[300px]">
+                <SheetHeader className="mb-8">
                   <Logo />
+                </SheetHeader>
+                <nav className="flex flex-col gap-4">
                   {NAV_LINKS.map((link) => (
                     <Link
                       key={link.href}
@@ -48,7 +50,7 @@ export function Header() {
                       className={cn(
                         "block px-2 py-1 text-lg",
                         pathname === link.href
-                          ? "text-primary"
+                          ? "text-primary font-semibold"
                           : "text-muted-foreground"
                       )}
                     >
@@ -63,16 +65,16 @@ export function Header() {
              <Logo />
           </div>
 
-          <nav className="hidden md:flex md:items-center md:gap-6 text-sm">
+          <nav className="hidden md:flex md:items-center md:gap-6 text-sm font-medium">
             {NAV_LINKS.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 className={cn(
-                  "transition-colors hover:text-foreground/80",
+                  "transition-colors hover:text-primary",
                   pathname === link.href
-                    ? "text-foreground"
-                    : "text-foreground/60"
+                    ? "text-primary font-semibold"
+                    : "text-foreground/70"
                 )}
               >
                 {link.label}
@@ -81,12 +83,11 @@ export function Header() {
           </nav>
 
           <div className="flex items-center gap-2">
-            <Button variant="ghost" size="icon">
-              <Search className="h-5 w-5" />
-              <span className="sr-only">Search</span>
+            <Button asChild size="sm">
+              <Link href="/store">Order Now</Link>
             </Button>
             <Button variant="ghost" size="icon" asChild>
-              <Link href="/store/cart">
+              <Link href="/store/cart" aria-label="Open Shopping Cart">
                 <ShoppingCart className="h-5 w-5" />
                 {cartCount > 0 && (
                   <Badge

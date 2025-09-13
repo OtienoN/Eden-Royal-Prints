@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Mail, Phone } from "lucide-react";
+import { Mail, Phone, MapPin, Clock } from "lucide-react";
 import * as LucideIcons from "lucide-react";
 
 import {
@@ -15,25 +15,28 @@ export function Footer() {
   return (
     <footer className="bg-secondary text-secondary-foreground">
       <div className="container py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-8">
-          <div className="lg:col-span-2 md:col-span-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="md:col-span-2 lg:col-span-1">
             <Logo />
-            <p className="mt-4 text-sm max-w-xs">{COMPANY_NAME}</p>
-            <div className="mt-4 space-y-2 text-sm">
-              <a
-                href={`tel:${CONTACT_DETAILS.phone}`}
-                className="flex items-center gap-2 hover:text-primary"
-              >
-                <Phone className="h-4 w-4" />
-                <span>{CONTACT_DETAILS.phone}</span>
-              </a>
-              <a
-                href={`mailto:${CONTACT_DETAILS.email}`}
-                className="flex items-center gap-2 hover:text-primary"
-              >
-                <Mail className="h-4 w-4" />
-                <span>{CONTACT_DETAILS.email}</span>
-              </a>
+            <p className="mt-4 text-sm max-w-xs">
+              Your premier partner for printing, digital services, and ICT solutions in Kenya. Quality you can trust, service you can rely on.
+            </p>
+            <div className="flex gap-2 mt-4">
+              {SOCIAL_LINKS.map((social) => {
+                const Icon = LucideIcons[social.icon];
+                return (
+                  <Button
+                    key={social.name}
+                    variant="ghost"
+                    size="icon"
+                    asChild
+                  >
+                    <a href={social.href} aria-label={social.name}>
+                      <Icon className="h-5 w-5 text-primary hover:text-accent" />
+                    </a>
+                  </Button>
+                );
+              })}
             </div>
           </div>
 
@@ -54,30 +57,36 @@ export function Footer() {
               </ul>
             </div>
           ))}
+
+          <div>
+             <h3 className="font-semibold font-headline">Contact Info</h3>
+             <div className="mt-4 space-y-3 text-sm text-muted-foreground">
+                <div className="flex items-start gap-3">
+                  <MapPin className="h-4 w-4 mt-1 text-primary flex-shrink-0" />
+                  <span>{CONTACT_DETAILS.address}</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Phone className="h-4 w-4 mt-1 text-primary flex-shrink-0" />
+                  <a href={`tel:${CONTACT_DETAILS.phone}`} className="hover:text-primary">{CONTACT_DETAILS.phone}</a>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Mail className="h-4 w-4 mt-1 text-primary flex-shrink-0" />
+                  <a href={`mailto:${CONTACT_DETAILS.email}`} className="hover:text-primary">{CONTACT_DETAILS.email}</a>
+                </div>
+                 <div className="flex items-start gap-3">
+                  <Clock className="h-4 w-4 mt-1 text-primary flex-shrink-0" />
+                  <span>{CONTACT_DETAILS.openingHours}</span>
+                </div>
+             </div>
+          </div>
+
         </div>
 
-        <div className="mt-8 border-t pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="mt-8 border-t pt-8 text-center">
           <p className="text-sm text-muted-foreground">
             &copy; {new Date().getFullYear()} {COMPANY_NAME}. All rights
             reserved.
           </p>
-          <div className="flex gap-2">
-            {SOCIAL_LINKS.map((social) => {
-              const Icon = LucideIcons[social.icon];
-              return (
-                <Button
-                  key={social.name}
-                  variant="ghost"
-                  size="icon"
-                  asChild
-                >
-                  <a href={social.href} aria-label={social.name}>
-                    <Icon className="h-5 w-5" />
-                  </a>
-                </Button>
-              );
-            })}
-          </div>
         </div>
       </div>
     </footer>
