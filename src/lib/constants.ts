@@ -14,22 +14,91 @@ export const NAV_LINKS = [
   { href: '/contact', label: 'Contact' },
 ];
 
-export const SERVICES: { title: string; description: string; icon: keyof typeof import("lucide-react") }[] = [
+export const DETAILED_SERVICES = [
   {
-    title: 'Design & Printing',
-    description: 'Professional T-shirt printing, business cards, posters, flyers, and custom vinyl branding that makes your brand stand out.',
-    icon: 'Palette',
+    id: "design-printing",
+    title: "Design & Printing Services",
+    icon: "Palette" as const,
+    description: "Professional printing and design services that make your brand stand out. From custom apparel to business materials, we bring your vision to life with royal quality.",
+    items: [
+      "Custom T-shirt Printing", "Business Cards Design & Print", "Posters & Banners",
+      "Flyers & Brochures", "Letter Heads & Envelopes", "Stickers & Labels",
+      "Calendars & Diaries", "Wedding Cards & Invitations", "Logo Design & Branding",
+      "Vinyl Printing & Cutting", "Mug Printing & Branding", "Certificate Design & Print",
+      "Menu Design & Printing", "ID Cards & Lanyards", "Notebook & Journal Printing",
+      "Custom Packaging Design"
+    ]
   },
   {
-    title: 'ICT & Digital Services',
-    description: 'Complete ICT solutions including online applications, plagiarism detection, CV writing, and eLearning support.',
-    icon: 'Laptop',
+    id: "government-cyber",
+    title: "Government & eCitizen Services",
+    icon: "Landmark" as const,
+    description: "Expert assistance with all government-related services and documentation. We help you navigate complex processes with ease and confidence.",
+    items: [
+      "KRA PIN Registration & Certificate", "HELB Application & Services", "TSC Registration & Services",
+      "TIMS Tax Registration", "Good Conduct Certificate", "Passport Application Support",
+      "NHIF Registration & Services", "NSSF Registration & Updates", "eCitizen Account Creation",
+      "eCitizen Services Assistance", "Birth Certificate Application", "ID Card Replacement",
+      "Marriage Certificate", "Business Registration Support", "NTSA Services & DL Application",
+      "Job Application Assistance"
+    ]
   },
   {
-    title: 'Government & Cyber Services',
-    description: 'Expert assistance with eCitizen, TIMS, TSC, NTSA services, plus typing, proofreading, and account creation.',
-    icon: 'FileText',
+    id: "ict-digital",
+    title: "ICT & Academic Services",
+    icon: "Laptop" as const,
+    description: "Comprehensive ICT solutions and academic support to help you succeed in the digital age. From applications to research assistance.",
+    items: [
+      "KUCCPS University Application", "TVET Institution Applications", "University Online Applications",
+      "Scholarship Applications", "Plagiarism Detection & Checking", "CV Writing & Formatting",
+      "Cover Letter Creation", "LinkedIn Profile Optimization", "Email Account Setup & Support",
+      "eLearning Portal Support", "Online Course Registration", "Research Paper Formatting",
+      "Thesis & Project Writing Support", "Data Analysis Assistance", "PowerPoint Presentations",
+      "Academic Proposal Writing"
+    ]
   },
+  {
+    id: "technical-repair",
+    title: "Technical & Repair Services",
+    icon: "Wrench" as const,
+    description: "Professional technical support and repair services for all your electronic devices. Fast, reliable, and affordable solutions.",
+    items: [
+      "PC & Laptop Repair", "Software Installation & Setup", "Operating System Installation",
+      "Virus Removal & Protection", "Hardware Upgrades", "Data Recovery Services",
+      "Printer Repair & Maintenance", "Network Setup & Configuration", "Phone Screen Repair",
+      "Phone Software Issues", "Computer Troubleshooting", "Internet Connectivity Issues",
+      "System Optimization", "Backup Solutions Setup", "Remote Desktop Setup",
+      "Technical Consultation"
+    ]
+  },
+  {
+    id: "digital-services",
+    title: "Digital Services",
+    icon: "Camera" as const,
+    description: "Professional digital services for all your documentation and photography needs. High-quality results with quick turnaround times.",
+    items: [
+      "Passport Size Photo Shooting", "Document Scanning & Digitization", "Photo Printing (All Sizes)",
+      "Photo Editing & Enhancement", "Document Email Services", "PDF Creation & Conversion",
+      "Image Format Conversion", "Photo Background Removal", "CD/DVD Burning Services",
+      "USB Flash Disk Setup", "Document Formatting", "Digital File Organization",
+      "Cloud Storage Setup", "Digital Photo Albums", "Video File Conversion",
+      "Digital Archiving Services"
+    ]
+  },
+  {
+    id: "cyber-services",
+    title: "Cyber & Online Services",
+    icon: "Globe" as const,
+    description: "Complete cyber cafe services and online assistance. From typing to social media management, we've got you covered.",
+    items: [
+      "Professional Typing Services", "Proofreading & Editing", "Content Writing",
+      "Translation Services", "Online Account Creation", "Social Media Setup",
+      "Email Marketing Setup", "SMS Campaign Services", "Basic Transcription Services",
+      "Data Entry Services", "Online Form Filling", "Website Content Upload",
+      "Blog Post Writing", "Social Media Management", "Online Research Services",
+      "Virtual Assistant Services"
+    ]
+  }
 ];
 
 
@@ -56,6 +125,59 @@ export const WHY_CHOOSE_US = [
     },
 ];
 
+export const SERVICE_FEATURES = [
+    { 
+        title: 'Quick Turnaround', 
+        description: 'Most services completed within 24 hours', 
+        icon: 'Clock' as const
+    },
+    { 
+        title: 'Quality Guarantee', 
+        description: '100% satisfaction guarantee on all services', 
+        icon: 'ShieldCheck' as const
+    },
+    { 
+        title: 'Affordable Pricing', 
+        description: 'Competitive rates without hidden costs', 
+        icon: 'BadgeDollarSign' as const
+    },
+    { 
+        title: 'Expert Support', 
+        description: 'Professional guidance every step of the way', 
+        icon: 'Headset' as const
+    },
+];
+
+export const PRICING_TIERS = [
+  {
+    title: "Printing Services",
+    items: [
+      { name: "Business Cards", price: "From KSh 50 each" },
+      { name: "T-shirt Printing", price: "From KSh 500" },
+      { name: "Posters A4", price: "From KSh 100" },
+      { name: "Flyers", price: "From KSh 20 each" },
+    ]
+  },
+  {
+    title: "Government Services",
+    items: [
+      { name: "KRA PIN", price: "KSh 200" },
+      { name: "eCitizen Services", price: "From KSh 150" },
+      { name: "TIMS Registration", price: "KSh 300" },
+      { name: "Application Support", price: "From KSh 250" },
+    ]
+  },
+  {
+    title: "Digital & ICT",
+    items: [
+      { name: "CV Writing", price: "From KSh 500" },
+      { name: "Typing", price: "KSh 50 per page" },
+      { name: "Passport Photos", price: "KSh 200" },
+      { name: "PC Repair", price: "From KSh 1000" },
+    ]
+  }
+];
+
 export const CORE_VALUES_V2 = [
     { name: 'Royal Quality', description: 'We use only the finest materials and latest technology to ensure every project meets the highest standards. Our quality control process guarantees exceptional results every time.', icon: 'Crown' as const },
     { name: 'Innovation', description: 'We continuously invest in cutting-edge technology and stay ahead of industry trends to provide our customers with the most advanced solutions available.', icon: 'Lightbulb' as const },
@@ -64,7 +186,6 @@ export const CORE_VALUES_V2 = [
     { name: 'Customer Focus', description: 'Your success is our success. We listen to your needs, understand your goals, and tailor our services to exceed your expectations.', icon: 'Users' as const },
     { name: 'Sustainability', description: 'We\'re committed to environmental responsibility, using eco-friendly materials and processes wherever possible to minimize our environmental impact.', icon: 'Leaf' as const },
 ];
-
 
 export const TEAM_MEMBERS = [
     { 
@@ -115,16 +236,16 @@ export const FOOTER_LINKS = {
         { href: '/store', label: 'Order Now'},
     ],
     'Our Services': [
-      { href: '/services', label: 'T-shirt Printing' },
-      { href: '/services', label: 'Business Cards' },
-      { href: '/services', label: 'eCitizen Services' },
-      { href: '/services', label: 'Online Applications' },
-      { href: '/services', label: 'PC Repairs' },
-      { href: '/services', label: 'Digital Photography' },
+      { href: '/services#design-printing', label: 'T-shirt Printing' },
+      { href: '/services#design-printing', label: 'Business Cards' },
+      { href: '/services#government-cyber', label: 'eCitizen Services' },
+      { href: '/services#ict-digital', label: 'Online Applications' },
+      { href: '/services#technical-repair', label: 'PC Repairs' },
+      { href: '/services#digital-services', label: 'Digital Photography' },
     ],
     'Support': [
         { href: '/contact', label: 'Contact Us' },
-        { href: '/#faq', label: 'FAQ' }, // Example link, FAQ section not implemented yet
+        { href: '/quote', label: 'Request a Quote' },
     ]
 };
 

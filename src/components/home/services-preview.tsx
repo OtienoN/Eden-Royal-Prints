@@ -3,9 +3,10 @@ import * as LucideIcons from "lucide-react";
 import { ArrowRight } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { SERVICES } from "@/lib/constants";
+import { DETAILED_SERVICES } from "@/lib/constants";
 
 export function ServicesPreview() {
+  const servicesToShow = DETAILED_SERVICES.slice(0, 3);
   return (
     <section className="py-12 md:py-24">
       <div className="container">
@@ -16,7 +17,7 @@ export function ServicesPreview() {
           </p>
         </div>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-          {SERVICES.map((service) => {
+          {servicesToShow.map((service) => {
             const Icon = LucideIcons[service.icon];
             return (
               <Card key={service.title} className="flex flex-col text-center items-center">
@@ -29,7 +30,7 @@ export function ServicesPreview() {
                   <CardTitle className="text-xl mb-2">{service.title}</CardTitle>
                   <p className="text-muted-foreground mb-4">{service.description}</p>
                    <Button asChild variant="secondary">
-                      <Link href="/services">Learn More</Link>
+                      <Link href={`/services#${service.id}`}>Learn More</Link>
                    </Button>
                 </CardContent>
               </Card>
