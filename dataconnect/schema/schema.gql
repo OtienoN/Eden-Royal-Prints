@@ -1,0 +1,44 @@
+type User @table {
+  username: String!
+  email: String!
+  createdAt: Timestamp!
+  displayName: String
+  bio: String
+  avatarUrl: String
+  location: String
+  githubUrl: String
+  linkedinUrl: String
+}
+
+type Project @table {
+  name: String!
+  description: String!
+  repositoryUrl: String!
+  createdAt: Timestamp!
+  creator: User
+  websiteUrl: String
+  language: String
+  license: String
+}
+
+type Skill @table {
+  name: String!
+}
+
+type UserSkill @table(key: ["user", "skill"]) {
+  user: User!
+  skill: Skill!
+  proficiency: String
+}
+
+type Follow @table(key: ["follower", "followed"]) {
+  follower: User!
+  followed: User!
+  createdAt: Timestamp!
+}
+
+type Star @table(key: ["user", "project"]) {
+  user: User!
+  project: Project!
+  createdAt: Timestamp!
+}

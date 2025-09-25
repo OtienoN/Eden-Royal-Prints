@@ -1,0 +1,77 @@
+mutation SeedDatabase @auth(level: USER) {
+  user_insertMany(data: [
+    {
+      id: "550e8400-e29b-41d4-a716-446655440000",
+      username: "bobuser",
+      email: "bob@example.com",
+      createdAt: "2024-01-01T00:00:00Z",
+      displayName: "Bob User",
+      bio: "Software Engineer",
+      location: "San Francisco",
+      avatarUrl: "https://example.com/avatar.png",
+      githubUrl: "https://github.com/bobuser",
+      linkedinUrl: "https://linkedin.com/in/bobuser"
+    },
+    {
+      id: "550e8400-e29b-41d4-a716-446655440001",
+      username: "aliceuser",
+      email: "alice@example.com",
+      createdAt: "2024-01-01T00:00:00Z",
+      displayName: "Alice User",
+      bio: "Data Scientist",
+      location: "New York",
+      avatarUrl: "https://example.com/avatar.png",
+      githubUrl: "https://github.com/aliceuser",
+      linkedinUrl: "https://linkedin.com/in/aliceuser"
+    }
+  ])
+  skill_insertMany(data: [
+    {
+      id: "550e8400-e29b-41d4-a716-446655440002",
+      name: "JavaScript"
+    },
+    {
+      id: "550e8400-e29b-41d4-a716-446655440003",
+      name: "Python"
+    }
+  ])
+  project_insertMany(data: [
+    {
+      id: "550e8400-e29b-41d4-a716-446655440004",
+      name: "Example Project",
+      description: "An example project",
+      createdAt: "2024-01-01T00:00:00Z",
+      creatorId: "550e8400-e29b-41d4-a716-446655440000",
+      language: "JavaScript",
+      license: "MIT",
+      repositoryUrl: "https://github.com/example/example",
+      websiteUrl: "https://example.com"
+    }
+  ])
+  userSkill_insertMany(data: [
+    {
+      userId: "550e8400-e29b-41d4-a716-446655440000",
+      skillId: "550e8400-e29b-41d4-a716-446655440002",
+      proficiency: "Expert"
+    },
+    {
+      userId: "550e8400-e29b-41d4-a716-446655440001",
+      skillId: "550e8400-e29b-41d4-a716-446655440003",
+      proficiency: "Intermediate"
+    }
+  ])
+  follow_insertMany(data: [
+    {
+      followerId: "550e8400-e29b-41d4-a716-446655440000",
+      followedId: "550e8400-e29b-41d4-a716-446655440001",
+      createdAt: "2024-01-01T00:00:00Z"
+    }
+  ])
+  star_insertMany(data: [
+    {
+      userId: "550e8400-e29b-41d4-a716-446655440000",
+      projectId: "550e8400-e29b-41d4-a716-446655440004",
+      createdAt: "2024-01-01T00:00:00Z"
+    }
+  ])
+}

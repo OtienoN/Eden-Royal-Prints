@@ -1,0 +1,34 @@
+mutation CreateProject($name: String!, $description: String!, $repositoryUrl: String!) @auth(level: USER) {
+  project_insert(data: {
+    name: $name,
+    description: $description,
+    repositoryUrl: $repositoryUrl,
+    creatorId_expr: "auth.uid"
+  })
+}
+
+query GetMyProjects @auth(level: USER) {
+  projects(where: {creatorId: {eq_expr: "auth.uid"}}) {
+    id
+    name
+    description
+    repositoryUrl
+  }
+}
+
+mutation FollowUser($followedId: UUID!) @auth(level: USER) {
+  follow_insert(data: {
+    followerId_expr: "auth.uid",
+    followedId: $followedId
+  })
+}
+
+query ListUsers @auth(level: USER) {
+  users {
+    id
+    username
+    displayName
+    bio
+    avatarUrl
+  }
+}
